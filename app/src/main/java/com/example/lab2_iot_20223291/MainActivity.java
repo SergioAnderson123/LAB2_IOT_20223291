@@ -50,10 +50,9 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
 
-            // Descomentar cuando creemos DetallePeliculaActivity
             Intent intent = new Intent(MainActivity.this, DetallePeliculaActivity.class);
             intent.putExtra("ID_PELICULA", idPelicula);
-            // startActivity(intent);
+            startActivity(intent);
         });
     }
 

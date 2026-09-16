@@ -6,8 +6,6 @@ import retrofit2.http.Query;
 
 public interface OmdbApiService {
 
-    // La URL base será https://www.omdbapi.com/, aquí definimos lo que va después
-    // Usamos @Query para armar la URL: ?apikey=...&i=...
     @GET("/")
     Call<PeliculaBean> obtenerPelicula(
             @Query("apikey") String apiKey,

@@ -64,7 +64,7 @@ public class DetallePeliculaActivity extends AppCompatActivity {
                     PeliculaBean pelicula = response.body();
 
                     // OMDB devuelve el JSON aunque la película no exista (con un campo "Response": "False").
-                    // Si el título es nulo, asumimos que no se encontró.
+                    // Si el título es nulo, no se encuentra.
                     if (pelicula.getTitulo() != null) {
                         binding.tvTitulo.setText(pelicula.getTitulo());
                         binding.tvAnio.setText(pelicula.getAnio());
@@ -95,7 +95,7 @@ public class DetallePeliculaActivity extends AppCompatActivity {
                 .setMessage("¿Desea volver al menú principal?")
                 .setPositiveButton("Sí", (dialog, which) -> {
 
-                    // Cierra esta activity y vuelve al MainActivity
+                    // Cierro esta activity y vuelve al MainActivity
                     finish();
                 })
 
