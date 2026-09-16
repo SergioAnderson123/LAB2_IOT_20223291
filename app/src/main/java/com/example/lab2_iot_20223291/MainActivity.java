@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Contador
         binding.btnIrContador.setOnClickListener(v -> {
-            // Descomentar cuando creemos ContadorActivity
             Intent intent = new Intent(MainActivity.this, ContadorActivity.class);
             startActivity(intent);
         });
