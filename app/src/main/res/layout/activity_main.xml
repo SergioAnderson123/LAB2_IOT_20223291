@@ -1,19 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:background="#4CAF50">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="¡Bienvenido!"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#3A3A3A"
+        android:gravity="center"
+        android:paddingTop="48dp"
+        android:paddingBottom="32dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_rounded_crema"
+        android:padding="32dp"
+        android:gravity="center_horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnIrContador"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Ir al Contador"
+            android:backgroundTint="#1A237E"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnComprobarConexion"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="⚠️ Comprobar Conexión"
+            android:backgroundTint="#F44336"
+            android:layout_marginBottom="32dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscador de películas"
+            android:textStyle="bold"
+            android:textColor="#3A3A3A"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etIdPelicula"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="idPelícula (IMDb)"
+            android:inputType="text"
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBuscarPelicula"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Buscar"
+            android:backgroundTint="#4CAF50"/>
+    </LinearLayout>
+</LinearLayout>

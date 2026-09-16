@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#4CAF50">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contador"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#3A3A3A"
+        android:gravity="center"
+        android:paddingTop="48dp"
+        android:paddingBottom="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_rounded_crema"
+        android:padding="32dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor actual"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvNumeroContador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(cuenta del 1 al 20)"
+            android:textSize="14sp"
+            android:layout_marginBottom="48dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegresar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Regresar"
+            android:backgroundTint="#F44336"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnIniciarContador"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Iniciar contador"
+            android:backgroundTint="#1A237E"/>
+    </LinearLayout>
+</LinearLayout>
